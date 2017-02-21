@@ -14,7 +14,7 @@
   <tbody>
     <% @tests.each do |test| %>
       <tr>
-        <td><%= test.fecha_inicio %></td>
+        <td><%= test.fecha__inicio %></td>
         <td><%= test.fecha_final %></td>
         <td><%= link_to 'Show', test %></td>
         <td><%= link_to 'Edit', edit_test_path(test) %></td>
