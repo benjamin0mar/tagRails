@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require jquery.countdown
+//= require jquery.countdown-es
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation();
+});

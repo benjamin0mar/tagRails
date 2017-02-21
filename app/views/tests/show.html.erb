@@ -1,0 +1,15 @@
+<p>
+  <%= @test.fecha_final %>
+</p>
+
+<p class="c1"></p>
+
+<%= link_to 'Back', tests_path %>
+<%= link_to 'Edit', edit_test_path(@test) %>
+
+<%= javascript_tag do %>
+
+  $(".c1").countdown({
+      until: new Date(<%= @test.fecha_final.year %>, <%= @test.fecha_final.month %>-1, <%= @test.fecha_final.day %>, <%= @test.fecha_final.hour %>,  <%= @test.fecha_final.min %>)});
+
+<% end %>
